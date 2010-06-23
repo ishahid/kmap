@@ -1,17 +1,25 @@
 ﻿
 using System;
-using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Drawing.Drawing2D;
+using System.Collections.Generic;
 
 namespace KarnaughMap
 {
     public partial class MainForm : Form
     {
+        private Graphics graphics;
+        
         public MainForm()
         {
             InitializeComponent();
-            
+        }
+        
+        void MainFormLoad(object sender, EventArgs e)
+        {
+        	graphics = gbk.CreateGraphics();
+            graphics.SmoothingMode = SmoothingMode.AntiAlias;
         }
         
         void MainFormPaint(object sender, PaintEventArgs e)
@@ -412,6 +420,8 @@ namespace KarnaughMap
             
             if (equation != "1")
             {
+                groups.Sort();
+                
                 foreach (string group in groups)
                     equation = equation + " " + group;
                 
@@ -425,21 +435,16 @@ namespace KarnaughMap
         void DrawEllipse(int left, int top, int width, int height, Color color)
         {
             Pen pen = new Pen(new SolidBrush(color));
-            Graphics graphics = gbk.CreateGraphics();
             graphics.DrawEllipse(pen, new Rectangle(left, top, width, height));
             pen.Dispose();
-            graphics.Dispose();
         }
         
         void DrawSplitArc(int left, int top, int width, int height, float start_angle, float sweep_angle, Color color)
         {
             Pen pen = new Pen(new SolidBrush(color));
-            Graphics graphics = gbk.CreateGraphics();
             graphics.DrawArc(pen, new Rectangle(left, top, width, height), start_angle, sweep_angle);
             pen.Dispose();
-            graphics.Dispose();
         }
-        
         
         bool Checked8()
         {

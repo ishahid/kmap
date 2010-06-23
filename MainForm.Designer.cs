@@ -426,6 +426,7 @@ namespace KarnaughMap
         	this.MaximizeBox = false;
         	this.Name = "MainForm";
         	this.Text = "KarnaughMap";
+        	this.Load += new System.EventHandler(this.MainFormLoad);
         	this.Paint += new System.Windows.Forms.PaintEventHandler(this.MainFormPaint);
         	this.gbt.ResumeLayout(false);
         	this.gbt.PerformLayout();
