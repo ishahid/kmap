@@ -2,7 +2,7 @@
 This is a small, three-variable, boolean algebra program made by Imran Shahid (@ishahid).
 
 ### Downloads
-* [kmap.exe](files/kmap.exe)
+* [kmap.exe](images/kmap.exe)
 
 ### Screenshots
 <img src="images/screenshot1.png"  alt="Screenshot 1" height="269px" width="299px"><br>
