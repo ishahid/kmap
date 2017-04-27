@@ -2,7 +2,7 @@
 This is a small, three-variable, boolean algebra program.
 
 ### Downloads
-* [kmap.exe](images/kmap.exe)
+* [kmap.exe](https://github.com/ishahid/kmap/releases/download/v1.0/kmap.exe)
 
 ### Screenshots
 <img src="images/screenshot1.png"  alt="Screenshot 1" height="269px" width="299px"><br>
