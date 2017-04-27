@@ -1,5 +1,5 @@
 ### Welcome to KarnoughMap
-This is a small, three-variable, boolean algebra program made by Imran Shahid (@ishahid).
+This is a small, three-variable, boolean algebra program.
 
 ### Downloads
 * [kmap.exe](images/kmap.exe)
