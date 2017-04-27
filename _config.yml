@@ -1,0 +1,8 @@
+title: KarnoughMap
+description: A three-variable boolean algebra program.
+google_analytics: UA-41544428-2
+show_downloads: true
+theme: jekyll-theme-modernist
+
+gems:
+  - jekyll-mentions
